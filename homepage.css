@@ -40,7 +40,7 @@ header nav {
 header a {
     padding: 5px 12px;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: bolder;
     color: black;
 }
@@ -106,12 +106,12 @@ h1 {
     text-shadow: 2px 0.5px 3px rgba(213, 213, 213, 0.962);
     color: whitesmoke;
 }
-h2 {font-size: 3.5em;
+h2 {font-size: 3em;
     color: #FFE116;
     padding: 20px 20px;
 }
 h3 {
-    font-size: 3em;
+    font-size: 2em;
 }
 h3 a{font-size: 1em;
     color: snow;
@@ -120,10 +120,10 @@ h3 a{font-size: 1em;
 h3 a:hover{
     color: snow;
 }
-p  {font-size: 2em;
+p  {font-size: 1.3em;
     color: black;
 }
-li {font-size: 1.5em;}
+li {font-size: 1em;}
 /*================NOTICIAS=======================*/
 #noticias h2{
     text-align: left
@@ -178,7 +178,7 @@ iframe {
     border-radius: 15px;
 }
 #mapa p{
-    font-size: 2em;
+    font-size: 1.3em;
     padding: 20px;
 }
 .fotico {
