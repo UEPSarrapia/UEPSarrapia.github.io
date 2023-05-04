@@ -265,7 +265,7 @@ footer .contenedor{
     }
     .mapa-wrap {
         justify-content: space-between;
-        width: 50%;
+        width: 100%;
     }
     #mapa h2 {
         text-align: center;
