@@ -261,11 +261,11 @@ footer .contenedor{
         background-color: #F93927;
         justify-content: center;
         display: flex;
+        gap: 20px;
     }
     .mapa-wrap {
         justify-content: space-between;
         width: 50%;
-        padding-left: 50px;
     }
     #mapa h2 {
         text-align: center;
