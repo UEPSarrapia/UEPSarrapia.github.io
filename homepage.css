@@ -202,8 +202,8 @@ footer .contenedor{
 @media (min-width: 900px) {
     header .logo-ppal {
         padding: 10px 20px;
-        max-width: 200px;
-        height: 167.54px;
+        max-width: 150px;
+        height: auto;
         justify-content: start;
     }
     
