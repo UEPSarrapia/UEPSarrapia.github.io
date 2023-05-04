@@ -54,7 +54,7 @@ header a:hover {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     color: black;
     padding-top: 30px;
     background-image: linear-gradient(
