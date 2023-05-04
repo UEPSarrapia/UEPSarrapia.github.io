@@ -1,0 +1,343 @@
+:root {
+    --level-1: #8dccad;
+    --level-2: #f5cc7f;
+    --level-3: #f27c8d;
+    --level-4: #d87cf2;
+    --black: black;}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* ENCABEZADO (VA EL LOGO Y EL MENU) */
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FFE116;
+    max-height: 297.54px;
+}
+header .logo-ppal {
+    padding: 10px 20px;
+    max-width: 200px;
+    height: 167.54px;
+    justify-content: start;
+}
+.logo {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* ============= MENU ===================*/
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bolder;
+    color: black;
+}
+header a:hover {
+    color: #1e40d9;
+}
+/* CUERPO */
+body {
+    background-color: #85C8F2;
+    font-family: 'Carlito', sans-serif;
+}
+h1 {
+    font-size: 5em;
+    text-align: center;
+    text-shadow: 2px 0.5px 3px rgba(213, 213, 213, 0.962);
+    color: black;
+}
+h2 {font-size: 3.5em;
+    color: #FFE116;
+    padding: 20px 0px;
+}
+h3 {
+    font-size: 1em;
+    color: white;
+}
+h3 a{font-size: 1em;
+    color: snow;
+    text-decoration: none;
+}
+h3 a:hover{
+    color: snow;
+}
+h4 {
+    font-size: 1em;
+    color: black;
+}
+p, li  {font-size: 2em;
+    color: black;
+    text-align: justify;
+}
+#texto-personal {
+    display: flex;
+    padding: 30px 0px;
+    background-color: #F93927;
+}
+.contenedor-texto {
+    padding: 20px;
+}
+#organigrama {
+    display: none;
+}
+.mapa-telefono {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+}
+.foto-mapa {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*========== VERSION DESKTOP ====================*/
+@media (min-width: 1000px) {
+    header .contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:#FFE116;
+        justify-content: space-between;
+        padding-right: 20px;
+        position: fixed; /* HAY QUE CAMBIARLO A FIXED */
+        width: 100%;
+    }
+    header .logo-ppal {
+        padding: 10px 20px;
+        max-width: 200px;
+        height: 167.54px;
+        justify-content: start;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        text-decoration: none;
+        padding-bottom: 0px;
+    }
+    #texto-personal {
+        display: flex;
+        padding-top: 210px;
+        padding-bottom: 50px;
+        background-color: #F93927;
+    }
+    .contenedor-texto {
+        padding: 20px;
+    }
+    /*ORGANIGRAMA*/
+#organigrama h2 {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#organigrama {
+    padding: 20px 20px;
+    display: flex;
+}
+/* PRIMER NIVEL*/
+.rectangulo {
+    position: relative;
+    padding: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+.chart-container {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto; 
+}
+.level-1 {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto 40px;
+    background: var(--level-1);
+    text-align: center;
+}
+.level-1::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 20px;
+    background: var(--black);
+}
+/* SEGUNDO NIVEL */
+.level-2-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.level-2-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 66.5%;
+    height: 4px;
+    background: var(--black);
+}
+.level-2-wrapper::after {
+    display: none;
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 100%;
+    height: 2px;
+    background: var(--black);
+}
+.level-2-wrapper li {
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+.level-2-wrapper h2 {
+    font-size: 1.2em;
+    color: black;
+}
+.level-2-wrapper > li::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 20px;
+    background: var(--black);
+}
+.level-2 {
+    width: 80%;
+    margin: 0 auto 40px;
+    background: var(--level-2);
+    flex-wrap: wrap;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+}
+.level-2::before { /* LINEAS QUE UNEN A LOS RECTANGULOS */
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background: var(--black);
+}
+.level-2::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+    width: 20px;
+    height: 2px;
+    background: var(--black);
+}
+/* TERCER NIVEL */
+.level-3-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
+.level-3-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 5%;
+    width: 90%;
+    height: 4px;
+    background: var(--black);
+}
+.level-3-wrapper > li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 4px;
+    height: 20px;
+    background: var(--black);
+}
+.level-3 {
+    margin-bottom: 20px;
+    padding: 50x;
+    background: var(--level-3);
+    padding: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+.level-3-wrapper p{
+    text-align: justify;
+    color: black;
+    font-size: 1em;
+}
+/* CUARTO NIVEL */
+.level-4-wrapper {
+    position: relative;
+    width: 80%;
+    margin-left: 80px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+.level-4-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 6px;
+    height: 50px;
+    background: var(--black);
+}
+.level-4 {
+    font-weight: normal;
+    background: var(--level-4);
+    padding: 60px;
+}
+.level-4-wrapper h2{
+    font-size: 1em;
+    font-weight: bolder;
+    color: black;
+}
+.organigramatel {
+    display: none;
+}
+
+}
