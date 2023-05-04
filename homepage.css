@@ -5,7 +5,7 @@
     list-style: none;
 }
 html {
-    display: block;
+    display: inline;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -54,9 +54,9 @@ header a:hover {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 78vh;
     color: black;
-    padding-top: 250px;
+    padding-top: 30px;
     background-image: linear-gradient(
         0deg,
         #000000,
