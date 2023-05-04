@@ -101,8 +101,7 @@ body {
     font-family: 'Carlito', sans-serif;
 }
 h1 {
-    font-size: 4em;
-    text-align: center;
+    font-size: 3em;
     text-shadow: 2px 0.5px 3px rgba(213, 213, 213, 0.962);
     color: whitesmoke;
 }
