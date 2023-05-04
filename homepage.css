@@ -101,16 +101,16 @@ body {
     font-family: 'Carlito', sans-serif;
 }
 h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     text-shadow: 2px 0.5px 3px rgba(213, 213, 213, 0.962);
     color: whitesmoke;
 }
-h2 {font-size: 3em;
+h2 {font-size: 2em;
     color: #FFE116;
     padding: 20px 20px;
 }
 h3 {
-    font-size: 2em;
+    font-size: 1.75em;
 }
 h3 a{font-size: 1em;
     color: snow;
@@ -189,7 +189,7 @@ footer {
 footer p{
     margin: 0px;
     color: black;
-    font-size: 2em;
+    font-size: 0.8em;
 }
 footer .contenedor{
     height: 100px;
