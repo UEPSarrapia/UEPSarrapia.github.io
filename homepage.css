@@ -183,6 +183,12 @@ iframe {
 .fotico {
     max-width: 600px;
 }
+.texto-mapa2 {
+    display: none;
+}
+.escuela-llegar {
+    display: none;
+}
 footer {
     background-color: #F93927;
 }
@@ -266,6 +272,20 @@ footer .contenedor{
     .mapa-wrap {
         justify-content: space-between;
         width: 100%;
+    }
+    .texto-mapa {
+        display: none;
+    }
+    .texto-mapa2 {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .escuela-llegar {
+        width: 100%;
+        height: 63%;
+        padding: 20px;
+        display: block;
     }
     #mapa h2 {
         text-align: center;
