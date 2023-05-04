@@ -20,8 +20,8 @@ header .contenedor {
 }
 header .logo-ppal {
     padding: 10px 25px;
-    max-width: 200px;
-    height: 167.54px;
+    max-width: 150px;
+    height: auto;
     justify-content: start;
 }
 .logo {
