@@ -193,7 +193,7 @@ button {
 .metas-items {
     text-align: justify;
     font-size: 1em;
-    padding-top: 7%;
+    padding-top: 2.5%;
 }
 #metas .contenedor-img{
     display: none;
@@ -204,7 +204,7 @@ footer {
     text-align: center;
 }
 /*========== VERSION DESKTOP ====================*/
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     header .contenedor {
         display: flex;
         flex-direction: row;
