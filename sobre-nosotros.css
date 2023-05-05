@@ -4,65 +4,67 @@
     --level-3: #f27c8d;
     --level-4: #d87cf2;
     --black: black;}
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
-::-webkit-scrollbar {
-    display: none;
-}
-/* ENCABEZADO (VA EL LOGO Y EL MENU) */
-header .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#FFE116;
-    max-height: 297.54px;
-}
-header .logo-ppal {
-    padding: 10px 20px;
-    max-width: 200px;
-    height: 167.54px;
-    justify-content: start;
-}
-.logo {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-/* ============= MENU ===================*/
-header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: none;
-    padding-bottom: 10px;
-    padding-top: 0px;
-}
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: bolder;
-    color: black;
-}
-header a:hover {
-    color: #1e40d9;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+    html {
+        display: inline;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    /* ENCABEZADO (VA EL LOGO Y EL MENU) */
+    header .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:#FFE116;
+        max-height: 297.54px;
+    }
+    header .logo-ppal {
+        padding: 10px 25px;
+        max-width: 150px;
+        height: auto;
+        justify-content: start;
+    }
+    .logo {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    /* ============= MENU ===================*/
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-decoration: none;
+        padding-bottom: 10px;
+    }
+    header a {
+        padding: 5px 12px;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bolder;
+        color: black;
+    }
+    header a:hover {
+        color: #1e40d9;
+    }
 /* CUERPO */
 body {
     background-color: #85C8F2;
     font-family: 'Carlito', sans-serif;
 }
 h1 {
-    font-size: 5em;
+    font-size: 3.5em;
     text-align: center;
     text-shadow: 2px 0.5px 3px rgba(213, 213, 213, 0.962);
     color: black;
 }
-h2 {font-size: 3.5em;
+h2 {font-size: 2em;
     color: #FFE116;
     padding: 20px 0px;
 }
@@ -81,7 +83,7 @@ h4 {
     font-size: 1em;
     color: black;
 }
-p, li  {font-size: 2em;
+p, li  {font-size: 1.3em;
     color: black;
     text-align: justify;
 }
@@ -127,6 +129,13 @@ p, li  {font-size: 2em;
 
 /*========== VERSION DESKTOP ====================*/
 @media (min-width: 1000px) {
+    header .logo-ppal {
+        padding: 10px 20px;
+        max-width: 150px;
+        height: auto;
+        justify-content: start;
+    }
+    
     header .contenedor {
         display: flex;
         flex-direction: row;
@@ -134,14 +143,8 @@ p, li  {font-size: 2em;
         background-color:#FFE116;
         justify-content: space-between;
         padding-right: 20px;
-        position: fixed; /* HAY QUE CAMBIARLO A FIXED */
+        position: fixed;
         width: 100%;
-    }
-    header .logo-ppal {
-        padding: 10px 20px;
-        max-width: 200px;
-        height: 167.54px;
-        justify-content: start;
     }
     header nav {
         display: flex;
