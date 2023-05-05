@@ -109,6 +109,20 @@ p, li  {font-size: 1em;
     display: flex;
     justify-content: center;
 }
+footer {
+    background-color: #85C8F2;
+}
+footer p{
+    margin: 0px;
+    color: black;
+    font-size: 0.8em;
+}
+footer .contenedor{
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 
 
