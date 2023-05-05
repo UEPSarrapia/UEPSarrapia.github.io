@@ -90,6 +90,7 @@ p, li  {font-size: 1em;
 #texto-personal {
     display: flex;
     padding: 30px 0px;
+    padding-top: 10px;
     background-color: #F93927;
 }
 .contenedor-texto {
@@ -167,9 +168,10 @@ footer .contenedor{
         text-decoration: none;
         padding-bottom: 0px;
     }
+    
     #texto-personal {
         display: flex;
-        padding-top: 210px;
+        padding-top: 160px;
         padding-bottom: 50px;
         background-color: #F93927;
     }
