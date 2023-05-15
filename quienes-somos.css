@@ -61,6 +61,7 @@ h1 {
 h2 {font-size: 2em;
     color: #FFE116;
     padding: 20px 0px;
+    text-shadow: 1px 1px 1px black;
 }
 h3 {
     font-size: 2em;
