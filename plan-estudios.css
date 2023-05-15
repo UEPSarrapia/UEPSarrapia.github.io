@@ -150,7 +150,8 @@ p, li  {font-size: 1em;
 }
 /*========================== EDUCACION PRIMARIA ==========================*/
 .contenedor-edu-prim {
-    background-color: #428A24;
+    background-color: #85C8F2;
+    padding-bottom: 40px
 }
 #edu-primaria .cont-materia:nth-child(2){ /* LENGUA Y LITERATURA */
     background-image: linear-gradient(
@@ -201,4 +202,125 @@ p, li  {font-size: 1em;
     background-position: center center;
     background-size: cover;
     border-radius: 15px;    
+}
+
+/*========== VERSION DESKTOP ====================*/
+@media (min-width: 900px) {
+    header .contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color:#FFE116;
+        justify-content: space-between;
+        padding-right: 20px;
+        position: fixed;
+        width: 100%;
+    }
+    header .logo-ppal {
+        padding: 10px 20px;
+        max-width: 150px;
+        height: auto;
+        justify-content: start;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        text-decoration: none;
+        padding-bottom: 0px;
+    }
+/*========================== EDUCACION INICIAL ==========================*/
+h2 {font-size: 2em;
+    color: #FFE116;
+    padding: 20px 0px;
+    text-shadow: 1px 1px 1px black;
+}
+#edu-inicial {
+    background-color: #d87cf2;
+    padding: 50px 0px;
+}
+.intro-edu-ini{
+    padding-top: 0px;
+    width: auto;
+    height: 300px;
+}
+.contenedor-edu-ini {
+    display: flex;
+    padding-top: 130px;
+}
+.cont-materia {
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+    height: 300px;
+    padding-top: 3%;
+}
+/*========================== EDUCACION PRIMARIA ==========================*/
+#edu-primaria {
+    background-color: #85C8F2;
+    padding: 50px 0px;
+}
+.contenedor-edu-prim {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 10px;
+}
+#edu-primaria .cont-materia {
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+    height: 300px;
+    padding-top: 5%;
+}
+#edu-primaria .cont-materia:nth-child(2){ /* LENGUA Y LITERATURA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://humanidades.com/wp-content/uploads/2018/12/don-quijote-1-scaled-e1584976940187.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(3){ /* MATEMATICA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://thumbs.gfycat.com/RashVioletDegu-size_restricted.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(4){ /* INGLES */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://movavi.io/wp-content/uploads/2020/03/vocabulary-cover-en.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(5){ /* CIENCIAS */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://previews.123rf.com/images/artisticco/artisticco1105/artisticco110500001/9451415-una-ilustraci%C3%B3n-vectorial-de-estudiantes-en-una-clase-de-ciencias-trabajando-en-un-proyecto-de.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(6){ /* ESTETICA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://i.gifer.com/origin/f0/f0669dde35d921a725b28918586cc05f.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+
 }
