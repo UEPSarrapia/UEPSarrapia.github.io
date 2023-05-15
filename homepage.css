@@ -125,7 +125,8 @@ p  {font-size: 1.3em;
 li {font-size: 1em;}
 /*================NOTICIAS=======================*/
 #noticias h2{
-    text-align: left
+    text-align: left;
+    text-shadow: 1px 1px 1px black;
 }
 #noticias {
     background-color: #0078D1;
@@ -175,6 +176,9 @@ iframe {
     border: 0px;
     padding: 20px;
     border-radius: 15px;
+}
+#mapa h2 {
+    text-shadow: 1px 1px 1px black;
 }
 #mapa p{
     font-size: 1.3em;
@@ -288,9 +292,11 @@ footer .contenedor{
         max-height: 54.5vh;
         padding: 20px;
         display: block;
+        border-radius: 30px;
     }
     #mapa h2 {
         text-align: center;
+        text-shadow: 1px 1px 1px black;
 
     }
 }
