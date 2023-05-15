@@ -1,76 +1,71 @@
-:root {
-    --level-1: #8dccad;
-    --level-2: #f5cc7f;
-    --level-3: #f27c8d;
-    --level-4: #d87cf2;
-    --black: black;}
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        list-style: none;
-    }
-    html {
-        display: inline;
-    }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    /* ENCABEZADO (VA EL LOGO Y EL MENU) */
-    header .contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color:#FFE116;
-        max-height: 297.54px;
-    }
-    header .logo-ppal {
-        padding: 10px 25px;
-        max-width: 150px;
-        height: auto;
-        justify-content: start;
-    }
-    .logo {
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-    }
-    /* ============= MENU ===================*/
-    header nav {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        text-decoration: none;
-        padding-bottom: 10px;
-    }
-    header a {
-        padding: 5px 12px;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bolder;
-        color: black;
-    }
-    header a:hover {
-        color: #1e40d9;
-    }
-/* CUERPO */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html {
+    display: inline;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* ENCABEZADO (VA EL LOGO Y EL MENU) */
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FFE116;
+    max-height: 297.54px;
+}
+header .logo-ppal {
+    padding: 10px 25px;
+    max-width: 150px;
+    height: auto;
+    justify-content: start;
+}
+.logo {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* ============= MENU ===================*/
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bolder;
+    color: black;
+}
+header a:hover {
+    color: #1e40d9;
+}
 body {
     background-color: #85C8F2;
     font-family: 'Carlito', sans-serif;
 }
 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     text-align: center;
     text-shadow: 2px 0.5px 3px rgba(213, 213, 213, 0.962);
-    color: black;
+    color: whitesmoke;
 }
 h2 {font-size: 2em;
     color: #FFE116;
     padding: 20px 0px;
+    text-shadow: 1px 1px 1px black;
 }
 h3 {
-    font-size: 1em;
+    font-size: 1.4em;
     color: white;
+    text-align: center;
 }
 h3 a{font-size: 1em;
     color: snow;
@@ -79,284 +74,131 @@ h3 a{font-size: 1em;
 h3 a:hover{
     color: snow;
 }
-h4 {
-    font-size: 1em;
-    color: black;
-}
 p, li  {font-size: 1em;
     color: black;
+}
+/*========================== EDUCACION INICIAL ==========================*/
+.contenedor-edu-ini {
+    background-color: #d87cf2;
+    padding-bottom: 40px;
+}
+.intro-edu-ini {
+    padding: 0px 20px;
+    padding-bottom: 40px;
+    padding-top: 50px;
     text-align: justify;
 }
-#texto-personal {
-    display: flex;
-    padding: 30px 0px;
+.cont-materia {
+    padding: 20px;
+    margin: 20px;
+}
+.cont-materia p{
+    color: white;
     padding-top: 10px;
-    background-color: #F93927;
-}
-.contenedor-texto {
-    padding: 20px;
-}
-#organigrama {
-    display: none;
-}
-.mapa-telefono {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    height: auto;
-}
-.foto-mapa {
-    display: flex;
-    justify-content: center;
-}
-footer {
-    background-color: #85C8F2;
-}
-footer p{
-    margin: 0px;
-    color: black;
-    font-size: 0.8em;
-}
-footer .contenedor{
-    height: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*========== VERSION DESKTOP ====================*/
-@media (min-width: 1000px) {
-    header .logo-ppal {
-        padding: 10px 20px;
-        max-width: 150px;
-        height: auto;
-        justify-content: start;
-    }
-    
-    header .contenedor {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color:#FFE116;
-        justify-content: space-between;
-        padding-right: 20px;
-        position: fixed;
-        width: 100%;
-    }
-    header nav {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        text-decoration: none;
-        padding-bottom: 0px;
-    }
-    
-    #texto-personal {
-        display: flex;
-        padding-top: 160px;
-        padding-bottom: 50px;
-        background-color: #F93927;
-    }
-    .contenedor-texto {
-        padding: 20px;
-    }
-    /*ORGANIGRAMA*/
-#organigrama h2 {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#organigrama {
-    padding: 20px 20px;
-    display: flex;
-}
-/* PRIMER NIVEL*/
-.rectangulo {
-    position: relative;
-    padding: 0px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
-}
-.chart-container {
-    max-width: 1000px;
-    padding: 0 20px;
-    margin: 0 auto; 
-}
-.level-1 {
-    width: 100%;
-    height: 150px;
-    margin: 0 auto 40px;
-    background: var(--level-1);
-    text-align: center;
-}
-.level-1::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 20px;
-    background: var(--black);
-}
-/* SEGUNDO NIVEL */
-.level-2-wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-.level-2-wrapper::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 66.5%;
-    height: 4px;
-    background: var(--black);
-}
-.level-2-wrapper::after {
-    display: none;
-    content: "";
-    position: absolute;
-    left: -20px;
-    bottom: -20px;
-    width: 100%;
-    height: 2px;
-    background: var(--black);
-}
-.level-2-wrapper li {
-    position: relative;
-    display: flex;
-    text-align: center;
-}
-.level-2-wrapper h2 {
-    font-size: 1.2em;
-    color: black;
-}
-.level-2-wrapper > li::before {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 20px;
-    background: var(--black);
-}
-.level-2 {
-    width: 80%;
-    margin: 0 auto 40px;
-    background: var(--level-2);
-    flex-wrap: wrap;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
-}
-.level-2::before { /* LINEAS QUE UNEN A LOS RECTANGULOS */
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 20px;
-    background: var(--black);
-}
-.level-2::after {
-    display: none;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-100%, -50%);
-    width: 20px;
-    height: 2px;
-    background: var(--black);
-}
-/* TERCER NIVEL */
-.level-3-wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 50px;
-    width: 100%;
-    margin: 0 auto;
-}
-.level-3-wrapper::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 5%;
-    width: 90%;
-    height: 4px;
-    background: var(--black);
-}
-.level-3-wrapper > li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    width: 4px;
-    height: 20px;
-    background: var(--black);
-}
-.level-3 {
-    margin-bottom: 20px;
-    padding: 50x;
-    background: var(--level-3);
-    padding: 50px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
-}
-.level-3-wrapper p{
+    font-size: 0.9em;
     text-align: justify;
-    color: black;
-    font-size: 1em;
 }
-/* CUARTO NIVEL */
-.level-4-wrapper {
-    position: relative;
-    width: 80%;
-    margin-left: 80px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+.cont-materia:nth-child(2){ /* LECTO ESCRITURA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7523ee00-94c3-403e-aa77-54a76361a634_1702x1309.jpeg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
 }
-.level-4-wrapper::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    width: 6px;
-    height: 50px;
-    background: var(--black);
+.cont-materia:nth-child(3){ /* PROCESO LOGICO MATEMATICO */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://cdn.dribbble.com/users/2175374/screenshots/5337709/back-to-school-f.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
 }
-.level-4 {
-    font-weight: normal;
-    background: var(--level-4);
-    padding: 60px;
+.cont-materia:nth-child(4){ /* ACTIVIDADES COLECTIVAS */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://www.emergingedtech.com/wp/wp-content/uploads/2019/08/Healthy-Positive-Classroom.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
 }
-.level-4-wrapper h2{
-    font-size: 1em;
-    font-weight: bolder;
-    color: black;
+.cont-materia:nth-child(5){ /* INGLES */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://learnlanguagesfromhome.com/wp-content/uploads/2022/12/child-english-whiteboard-1024x683.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
 }
-.organigramatel {
-    display: none;
+.cont-materia:nth-child(6){ /* EDUCACION FISICA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://i.pinimg.com/originals/a0/84/65/a08465fcb5cb830adfcbcc3ae9ea1116.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
 }
-
+/*========================== EDUCACION PRIMARIA ==========================*/
+.contenedor-edu-prim {
+    background-color: #428A24;
+}
+#edu-primaria .cont-materia:nth-child(2){ /* LENGUA Y LITERATURA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://humanidades.com/wp-content/uploads/2018/12/don-quijote-1-scaled-e1584976940187.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(3){ /* MATEMATICA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://thumbs.gfycat.com/RashVioletDegu-size_restricted.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(4){ /* INGLES */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://movavi.io/wp-content/uploads/2020/03/vocabulary-cover-en.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(5){ /* CIENCIAS */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://previews.123rf.com/images/artisticco/artisticco1105/artisticco110500001/9451415-una-ilustraci%C3%B3n-vectorial-de-estudiantes-en-una-clase-de-ciencias-trabajando-en-un-proyecto-de.jpg");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
+}
+#edu-primaria .cont-materia:nth-child(6){ /* ESTETICA */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url("https://i.gifer.com/origin/f0/f0669dde35d921a725b28918586cc05f.gif");
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;    
 }
