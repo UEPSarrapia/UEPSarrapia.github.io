@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
+    color: black;
 }
 html {
     display: inline;
@@ -48,7 +50,7 @@ header a:hover {
     color: #1e40d9;
 }
 body {
-    background-color: #85C8F2;
+    background-color: #E3F6FF;
     font-family: 'Carlito', sans-serif;
 }
 h1 {
@@ -60,7 +62,6 @@ h1 {
 h2 {font-size: 2em;
     color: #FFE116;
     padding: 20px 0px;
-    text-shadow: 1px 1px 1px black;
 }
 h3 {
     font-size: 1.4em;
@@ -77,10 +78,24 @@ h3 a:hover{
 p, li  {font-size: 1em;
     color: black;
 }
+footer {
+    background-color: #E3F6FF;
+    padding: 0px 20px;
+}
+footer p{
+    margin: 0px;
+    color: black;
+}
+footer .contenedor{
+    height: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
 /*========================== EDUCACION INICIAL ==========================*/
 .contenedor-edu-ini {
-    background-color: #d87cf2;
-    padding-bottom: 40px;
+    background-color: #E3F6FF;
 }
 .intro-edu-ini {
     padding: 0px 20px;
@@ -101,8 +116,8 @@ p, li  {font-size: 1em;
 .cont-materia:nth-child(2){ /* LECTO ESCRITURA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7523ee00-94c3-403e-aa77-54a76361a634_1702x1309.jpeg");
     background-position: center center;
     background-size: cover;
@@ -111,8 +126,8 @@ p, li  {font-size: 1em;
 .cont-materia:nth-child(3){ /* PROCESO LOGICO MATEMATICO */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://cdn.dribbble.com/users/2175374/screenshots/5337709/back-to-school-f.gif");
     background-position: center center;
     background-size: cover;
@@ -121,8 +136,8 @@ p, li  {font-size: 1em;
 .cont-materia:nth-child(4){ /* ACTIVIDADES COLECTIVAS */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://www.emergingedtech.com/wp/wp-content/uploads/2019/08/Healthy-Positive-Classroom.jpg");
     background-position: center center;
     background-size: cover;
@@ -131,8 +146,8 @@ p, li  {font-size: 1em;
 .cont-materia:nth-child(5){ /* INGLES */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://learnlanguagesfromhome.com/wp-content/uploads/2022/12/child-english-whiteboard-1024x683.jpg");
     background-position: center center;
     background-size: cover;
@@ -141,8 +156,8 @@ p, li  {font-size: 1em;
 .cont-materia:nth-child(6){ /* EDUCACION FISICA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://i.pinimg.com/originals/a0/84/65/a08465fcb5cb830adfcbcc3ae9ea1116.gif");
     background-position: center center;
     background-size: cover;
@@ -150,14 +165,14 @@ p, li  {font-size: 1em;
 }
 /*========================== EDUCACION PRIMARIA ==========================*/
 .contenedor-edu-prim {
-    background-color: #85C8F2;
+    background-color: #E3F6FF;
     padding-bottom: 40px
 }
 #edu-primaria .cont-materia:nth-child(2){ /* LENGUA Y LITERATURA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://humanidades.com/wp-content/uploads/2018/12/don-quijote-1-scaled-e1584976940187.jpg");
     background-position: center center;
     background-size: cover;
@@ -166,8 +181,8 @@ p, li  {font-size: 1em;
 #edu-primaria .cont-materia:nth-child(3){ /* MATEMATICA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://thumbs.gfycat.com/RashVioletDegu-size_restricted.gif");
     background-position: center center;
     background-size: cover;
@@ -176,8 +191,8 @@ p, li  {font-size: 1em;
 #edu-primaria .cont-materia:nth-child(4){ /* INGLES */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://movavi.io/wp-content/uploads/2020/03/vocabulary-cover-en.gif");
     background-position: center center;
     background-size: cover;
@@ -186,8 +201,8 @@ p, li  {font-size: 1em;
 #edu-primaria .cont-materia:nth-child(5){ /* CIENCIAS */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://previews.123rf.com/images/artisticco/artisticco1105/artisticco110500001/9451415-una-ilustraci%C3%B3n-vectorial-de-estudiantes-en-una-clase-de-ciencias-trabajando-en-un-proyecto-de.jpg");
     background-position: center center;
     background-size: cover;
@@ -196,8 +211,8 @@ p, li  {font-size: 1em;
 #edu-primaria .cont-materia:nth-child(6){ /* ESTETICA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://i.gifer.com/origin/f0/f0669dde35d921a725b28918586cc05f.gif");
     background-position: center center;
     background-size: cover;
@@ -233,10 +248,9 @@ p, li  {font-size: 1em;
 h2 {font-size: 2em;
     color: #FFE116;
     padding: 20px 0px;
-    text-shadow: 1px 1px 1px black;
 }
 #edu-inicial {
-    background-color: #d87cf2;
+    background-color: #E3F6FF;
     padding: 50px 0px;
 }
 .intro-edu-ini{
@@ -257,7 +271,7 @@ h2 {font-size: 2em;
 }
 /*========================== EDUCACION PRIMARIA ==========================*/
 #edu-primaria {
-    background-color: #85C8F2;
+    background-color: #E3F6FF;
     padding: 50px 0px;
 }
 .contenedor-edu-prim {
@@ -275,8 +289,8 @@ h2 {font-size: 2em;
 #edu-primaria .cont-materia:nth-child(2){ /* LENGUA Y LITERATURA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://humanidades.com/wp-content/uploads/2018/12/don-quijote-1-scaled-e1584976940187.jpg");
     background-position: center center;
     background-size: cover;
@@ -285,8 +299,8 @@ h2 {font-size: 2em;
 #edu-primaria .cont-materia:nth-child(3){ /* MATEMATICA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://thumbs.gfycat.com/RashVioletDegu-size_restricted.gif");
     background-position: center center;
     background-size: cover;
@@ -295,8 +309,8 @@ h2 {font-size: 2em;
 #edu-primaria .cont-materia:nth-child(4){ /* INGLES */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://movavi.io/wp-content/uploads/2020/03/vocabulary-cover-en.gif");
     background-position: center center;
     background-size: cover;
@@ -305,8 +319,8 @@ h2 {font-size: 2em;
 #edu-primaria .cont-materia:nth-child(5){ /* CIENCIAS */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://previews.123rf.com/images/artisticco/artisticco1105/artisticco110500001/9451415-una-ilustraci%C3%B3n-vectorial-de-estudiantes-en-una-clase-de-ciencias-trabajando-en-un-proyecto-de.jpg");
     background-position: center center;
     background-size: cover;
@@ -315,12 +329,18 @@ h2 {font-size: 2em;
 #edu-primaria .cont-materia:nth-child(6){ /* ESTETICA */
     background-image: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
     ), url("https://i.gifer.com/origin/f0/f0669dde35d921a725b28918586cc05f.gif");
     background-position: center center;
     background-size: cover;
     border-radius: 15px;    
+}
+footer .texto-contacto{
+    text-align: left;
+}
+footer h2{
+    text-align: center;
 }
 
 }
