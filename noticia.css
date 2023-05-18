@@ -95,6 +95,14 @@ footer .contenedor{
 
 /* ============= CUERPO ===================*/
 
+#nuevos-ingresos p{
+    padding: 0px 20px;
+    color: rgb(160, 159, 159);
+}
+#regulares p{
+    padding: 0px 20px;
+    color: rgb(160, 159, 159);
+}
 .contenedor-texto {
     padding: 20px 20px;
     text-align: justify;
