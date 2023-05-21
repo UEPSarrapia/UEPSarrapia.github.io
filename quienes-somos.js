@@ -41,3 +41,4 @@ const retrocedeImagen = () => {
   indiceImagen--;
 };
 btnRetrocede.addEventListener("click", retrocedeImagen);
+
