@@ -98,11 +98,17 @@ li a.active, li:hover {
     height: 100vh;
     width: 100%;
     color: black;
-    background-image: linear-gradient(
-        0deg,
-        #000000,
-        #000000,
-    ), url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1");
+    #hero {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    background-image: linear-gradient(#116be941, rgba(255, 255, 255, 0.076)), url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
