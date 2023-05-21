@@ -112,37 +112,6 @@ li a.active, li:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition-delay: 20s;
-    animation: motionhero infinite linear;
-    animation-delay: 10s;
-}
-/*ANIMACION DE CARRETE*/
-@keyframes motionhero {
-    0%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-    25%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-    26%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-    50%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-    51%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-    75%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-    76%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-    100%{
-        background-image: url("https://lh3.google.com/u/4/d/1bfr5ugeUNotA5xiJxcZI7RLUIH1f7KJK=w959-h967-iv1")
-    }
-}
 /* ====================BODY============================ */
 body {
     background-color: #E3F6FF;
