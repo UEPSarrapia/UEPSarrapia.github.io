@@ -13,305 +13,81 @@ html {
     display: none;
 }
 /* ENCABEZADO (VA EL LOGO Y EL MENU) */
-header .contenedor {
+#encabezado {
+    background-color: #0B2447;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    background-color:#FFE116;
-    max-height: 297.54px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
 }
-header .logo-ppal {
-    padding: 10px 25px;
-    max-width: 150px;
-    height: auto;
-    justify-content: start;
+#encabezado h2{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+#menu nav {
+    background-color: #116be9;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 97px;
 }
 .logo {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+    height: 60px;
+    filter: invert(1);
 }
-/* ============= MENU ===================*/
-header nav {
+.logo-alt {
+    height: auto;
+    width: 70px;
+}
+#menu nav ul {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    text-decoration: none;
-    padding-bottom: 10px;
-}
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bolder;
-    color: black;
-}
-header a:hover {
-    color: #1e40d9;
-}
-body {
-    background-color: #E3F6FF;
-    font-family: 'Carlito', sans-serif;
-}
-h1 {
-    font-size: 4em;
-    text-align: center;
-    text-shadow: 2px 0.5px 3px rgba(213, 213, 213, 0.962);
-    color: whitesmoke;
-}
-h2 {font-size: 2em;
-    color: #FFE116;
-    padding: 20px 0px;
-}
-h3 {
-    font-size: 1.4em;
-    color: white;
-    text-align: center;
-}
-h3 a{font-size: 1em;
-    color: snow;
-    text-decoration: none;
-}
-h3 a:hover{
-    color: snow;
-}
-p, li  {font-size: 1em;
-    color: black;
-}
-footer {
-    background-color: #E3F6FF;
-    padding: 0px 20px;
-}
-footer p{
-    margin: 0px;
-    color: black;
-}
-footer .contenedor{
-    height: 1%;
-    display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: start;
 }
-/*========================== EDUCACION INICIAL ==========================*/
-.contenedor-edu-ini {
-    background-color: #E3F6FF;
+#menu ul {
+    position: fixed;
+    top: 135px;
+    width: 100%;
+    height: 90%;
+    background: #116be9;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
 }
-.intro-edu-ini {
+#menu nav ul li {
+    display: block;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+#menu nav ul li a {
     padding: 0px 20px;
-    padding-bottom: 40px;
-    padding-top: 50px;
-    text-align: justify;
-}
-.cont-materia {
-    padding: 20px;
-    margin: 20px;
-}
-.cont-materia p{
+    border-radius: 5px;
     color: white;
-    padding-top: 10px;
-    font-size: 0.9em;
-    text-align: justify;
+    align-items: center;
 }
-.cont-materia:nth-child(2){ /* LECTO ESCRITURA */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7523ee00-94c3-403e-aa77-54a76361a634_1702x1309.jpeg");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
+#menu li a.active, li:hover {
+    background: #154587;
+    transition: .5s;
+    border-radius: 5px;
 }
-.cont-materia:nth-child(3){ /* PROCESO LOGICO MATEMATICO */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://cdn.dribbble.com/users/2175374/screenshots/5337709/back-to-school-f.gif");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
+.checkbtn {
+    font-size: 20px;
+    float: right;
+    line-height: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
 }
-.cont-materia:nth-child(4){ /* ACTIVIDADES COLECTIVAS */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://www.emergingedtech.com/wp/wp-content/uploads/2019/08/Healthy-Positive-Classroom.jpg");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
+#check:checked ~ ul {
+    left: 0;
 }
-.cont-materia:nth-child(5){ /* INGLES */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://learnlanguagesfromhome.com/wp-content/uploads/2022/12/child-english-whiteboard-1024x683.jpg");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
-}
-.cont-materia:nth-child(6){ /* EDUCACION FISICA */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://i.pinimg.com/originals/a0/84/65/a08465fcb5cb830adfcbcc3ae9ea1116.gif");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
-}
-/*========================== EDUCACION PRIMARIA ==========================*/
-.contenedor-edu-prim {
-    background-color: #E3F6FF;
-    padding-bottom: 40px
-}
-#edu-primaria .cont-materia:nth-child(2){ /* LENGUA Y LITERATURA */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://humanidades.com/wp-content/uploads/2018/12/don-quijote-1-scaled-e1584976940187.jpg");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
-}
-#edu-primaria .cont-materia:nth-child(3){ /* MATEMATICA */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://thumbs.gfycat.com/RashVioletDegu-size_restricted.gif");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
-}
-#edu-primaria .cont-materia:nth-child(4){ /* INGLES */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://movavi.io/wp-content/uploads/2020/03/vocabulary-cover-en.gif");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
-}
-#edu-primaria .cont-materia:nth-child(5){ /* CIENCIAS */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://previews.123rf.com/images/artisticco/artisticco1105/artisticco110500001/9451415-una-ilustraci%C3%B3n-vectorial-de-estudiantes-en-una-clase-de-ciencias-trabajando-en-un-proyecto-de.jpg");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
-}
-#edu-primaria .cont-materia:nth-child(6){ /* ESTETICA */
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.55),
-        rgba(0, 0, 0, 0.55)
-    ), url("https://i.gifer.com/origin/f0/f0669dde35d921a725b28918586cc05f.gif");
-    background-position: center center;
-    background-size: cover;
-    border-radius: 15px;    
-}
-
-/*========== VERSION DESKTOP ====================*/
-@media (min-width: 900px) {
-    header .contenedor {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color:#FFE116;
-        justify-content: space-between;
-        padding-right: 20px;
-        position: fixed;
-        width: 100%;
-    }
-    header .logo-ppal {
-        padding: 10px 20px;
-        max-width: 150px;
-        height: auto;
-        justify-content: start;
-    }
-    header nav {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        text-decoration: none;
-        padding-bottom: 0px;
-    }
-/*========================== EDUCACION INICIAL ==========================*/
-h2 {font-size: 2em;
-    color: #FFE116;
-    padding: 20px 0px;
-}
-#edu-inicial {
-    background-color: #E3F6FF;
-    padding: 50px 0px;
-}
-.intro-edu-ini{
-    padding-top: 0px;
-    width: auto;
-    height: 300px;
-}
-.contenedor-edu-ini {
-    display: flex;
-    padding-top: 130px;
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-html {
-    display: inline;
-}
-::-webkit-scrollbar {
+#check {
     display: none;
 }
-/* ENCABEZADO (VA EL LOGO Y EL MENU) */
-header .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:#FFE116;
-    max-height: 297.54px;
-}
-header .logo-ppal {
-    padding: 10px 25px;
-    max-width: 150px;
-    height: auto;
-    justify-content: start;
-}
-.logo {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-/* ============= MENU ===================*/
-header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-decoration: none;
-    padding-bottom: 10px;
-}
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bolder;
-    color: black;
-}
-header a:hover {
-    color: #1e40d9;
-}
 body {
     background-color: #E3F6FF;
     font-family: 'Carlito', sans-serif;
@@ -323,7 +99,7 @@ h1 {
     color: whitesmoke;
 }
 h2 {font-size: 2em;
-    color: #FFE116;
+    color: #0B2447;
     padding: 20px 0px;
 }
 h3 {
@@ -357,6 +133,9 @@ footer .contenedor{
     align-items: start;
 }
 /*========================== EDUCACION INICIAL ==========================*/
+#edu-inicial{
+    padding-top: 130px;
+}
 .contenedor-edu-ini {
     background-color: #E3F6FF;
 }
@@ -483,33 +262,80 @@ footer .contenedor{
 }
 
 /*========== VERSION DESKTOP ====================*/
-@media (min-width: 900px) {
-    header .contenedor {
+@media (min-width: 700px) {
+    #encabezado {
+        background-color: #0B2447;
         display: flex;
-        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
-        background-color:#FFE116;
-        justify-content: space-between;
-        padding-right: 20px;
-        position: fixed;
+        padding: 10px;
+    }
+    #encabezado h2{
+        color: white;
+        text-align: center;
+        font-size: 2em;
+    }
+    #menu nav {
+        background-color: #116be9;
+        height: 40px;
         width: 100%;
+        top: 140px;
     }
-    header .logo-ppal {
-        padding: 10px 20px;
-        max-width: 150px;
+    .logo {
+        height: 100px;
+        filter: invert(1);
+    }
+    .logo-alt {
         height: auto;
-        justify-content: start;
+        width: 110px;
     }
-    header nav {
+    #menu nav ul {
+        align-items: center;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+    #menu ul {
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        left: 0;
         text-align: center;
-        text-decoration: none;
-        padding-bottom: 0px;
+        transition: none;
+    }
+    #menu nav ul li {
+        display: inline-block;
+        line-height: 40px;
+    }
+    #menu nav ul li a {
+        padding: 0px 20px;
+        border-radius: 5px;
+        color: white;
+        align-items: center;
+    }
+    #menu li a.active, li:hover {
+        background: #154587;
+        transition: .5s;
+        border-radius: 5px;
+    }
+    .checkbtn {
+        font-size: 20px;
+        float: right;
+        line-height: 40px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check {
+        display: none;
+    }
+    footer .texto-contacto{
+        text-align: left;
     }
 /*========================== EDUCACION INICIAL ==========================*/
 h2 {font-size: 2em;
-    color: #FFE116;
+    color: #0B2447;
     padding: 20px 0px;
 }
 #edu-inicial {
@@ -528,6 +354,7 @@ h2 {font-size: 2em;
 .cont-materia {
     padding: 20px;
     margin: 20px;
+    margin-top: 35px;
     width: auto;
     height: 300px;
     padding-top: 3%;
@@ -537,10 +364,12 @@ h2 {font-size: 2em;
     background-color: #E3F6FF;
     padding: 50px 0px;
 }
+.contenedor-edu-ini {
+    background-color: #E3F6FF;
+}
 .contenedor-edu-prim {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 10px;
 }
 #edu-primaria .cont-materia {
     padding: 20px;
@@ -601,9 +430,6 @@ h2 {font-size: 2em;
 }
 footer .texto-contacto{
     text-align: left;
-}
-footer h2{
-    text-align: center;
 }
 
 }
