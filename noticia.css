@@ -13,41 +13,80 @@ html {
     display: none;
 }
 /* ENCABEZADO (VA EL LOGO Y EL MENU) */
-header .contenedor {
+#encabezado {
+    background-color: #0B2447;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    background-color:#FFE116;
-    max-height: 297.54px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
 }
-header .logo-ppal {
-    padding: 10px 25px;
-    max-width: 150px;
-    height: auto;
-    justify-content: start;
+#encabezado h2{
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}
+#menu nav {
+    background-color: #116be9;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 97px;
 }
 .logo {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+    height: 60px;
+    filter: invert(1);
 }
-/* ============= MENU ===================*/
-header nav {
+.logo-alt {
+    height: auto;
+    width: 70px;
+}
+#menu nav ul {
+    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+#menu ul {
+    position: fixed;
+    top: 135px;
+    width: 100%;
+    height: 90%;
+    background: #116be9;
+    left: -100%;
     text-align: center;
-    text-decoration: none;
-    padding-bottom: 10px;
+    transition: all 0.5s;
 }
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: bolder;
-    color: black;
+#menu nav ul li {
+    display: block;
+    line-height: 70px;
+    text-transform: uppercase;
 }
-header a:hover {
-    color: #1e40d9;
+#menu nav ul li a {
+    padding: 0px 20px;
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+}
+#menu li a.active, li:hover {
+    background: #154587;
+    transition: .5s;
+    border-radius: 5px;
+}
+.checkbtn {
+    font-size: 20px;
+    float: right;
+    line-height: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block;
+}
+#check:checked ~ ul {
+    left: 0;
+}
+#check {
+    display: none;
 }
 body {
     background-color: #E3F6FF;
@@ -60,7 +99,7 @@ h1 {
     color: whitesmoke;
 }
 h2 {font-size: 2em;
-    color: #FFE116;
+    color: #0B2447;
     padding: 20px 20px;
 }
 h3 {
@@ -94,7 +133,9 @@ footer .contenedor{
 }
 
 /* ============= CUERPO ===================*/
-
+#nuevos-ingresos{
+    padding-top: 180px;
+}
 #nuevos-ingresos p{
     padding: 0px 20px;
     color: rgb(160, 159, 159);
@@ -102,6 +143,9 @@ footer .contenedor{
 #regulares p{
     padding: 0px 20px;
     color: rgb(160, 159, 159);
+}
+.contenedor-texto li:hover {
+    background-color: transparent;
 }
 .contenedor-texto {
     padding: 20px 20px;
@@ -140,35 +184,76 @@ footer .contenedor{
 
 
 /*========== VERSION DESKTOP ====================*/
-@media (min-width: 900px) {
-    header .logo-ppal {
-        padding: 10px 20px;
-        max-width: 150px;
-        height: auto;
-        justify-content: start;
-    }
-    
-    header .contenedor {
+@media (min-width: 700px) {
+    /* ENCABEZADO (VA EL LOGO Y EL MENU) */
+    #encabezado {
+        background-color: #0B2447;
         display: flex;
-        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
-        background-color:#FFE116;
-        justify-content: space-between;
-        padding-right: 20px;
-        position: fixed;
-        width: 100%;
+        padding: 10px;
     }
-    header nav {
+    #encabezado h2{
+        color: white;
+        text-align: center;
+        font-size: 2em;
+    }
+    #menu nav {
+        background-color: #116be9;
+        height: 40px;
+        width: 100%;
+        top: 140px;
+    }
+    .logo {
+        height: 100px;
+        filter: invert(1);
+    }
+    .logo-alt {
+        height: auto;
+        width: 110px;
+    }
+    #menu nav ul {
+        align-items: center;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+    #menu ul {
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        left: 0;
         text-align: center;
-        text-decoration: none;
-        padding-bottom: 0px;
+        transition: none;
+    }
+    #menu nav ul li {
+        display: inline-block;
+        line-height: 40px;
+    }
+    #menu nav ul li a {
+        padding: 0px 20px;
+        border-radius: 5px;
+        color: white;
+        align-items: center;
+    }
+    #menu li a.active, li:hover {
+        background: #154587;
+        transition: .5s;
+        border-radius: 5px;
+    }
+    .checkbtn {
+        font-size: 20px;
+        float: right;
+        line-height: 40px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check {
+        display: none;
     }
     footer .texto-contacto{
         text-align: left;
-    }
-    footer h2{
-        text-align: center;
     }
 }
