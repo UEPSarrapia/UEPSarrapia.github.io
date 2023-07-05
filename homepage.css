@@ -177,6 +177,7 @@ li {font-size: 1em;}
     margin-block: 100px 0px;
     max-width: 1200px;
     max-height: 200px;
+    border: #116be9 solid 10px;
 }
 .carta:first-child{
     background-image: linear-gradient(
